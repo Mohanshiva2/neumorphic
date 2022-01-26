@@ -19,35 +19,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//hello world
-//hello mohan
 
 
-// Scaffold(
-// body: Column(
-// children: [
-// NeumorphicText(
-// 'Demo',
-// style: NeumorphicStyle(
-// depth: 4,
-// color: Colors.white,
-// ),
-// textStyle: NeumorphicTextStyle(
-// fontSize: 15,
-// ),
-// ),
-// Neumorphic(
-// style: NeumorphicStyle(
-// shape: NeumorphicShape.concave,
-// boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
-// depth: 8,
-// lightSource: LightSource.topLeft,
-// color: Colors.grey,
-// ),
-// child: Text(
-// 'DEMO'
-// ),
-// ),
-// ],
-// ),
-// );
+
