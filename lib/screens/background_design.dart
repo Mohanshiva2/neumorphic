@@ -1,6 +1,7 @@
 import 'package:clay_containers/clay_containers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:lottie/lottie.dart';
 import 'package:neumorphic/constants/constants.dart';
 
 class BackgroundDesign extends StatefulWidget {
@@ -26,16 +27,19 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
+                    //Top right Container
                     ClayContainer(
                       color: white,
                       width: 220,
                       height: 220,
                       borderRadius: 200,
                       depth: -50,
-                      curveType: CurveType.concave,
+                      curveType: CurveType.convex,
                     ),
 
+                    //top right inside1 container
                     ClayContainer(
+
                       color: white,
                       width: 180,
                       height: 180,
@@ -44,15 +48,17 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
                     ),
 
                     ClayContainer(
+
                       color: white,
                       width: 140,
                       height: 140,
                       borderRadius: 200,
                       depth: -50,
-                      curveType: CurveType.concave,
+                      curveType: CurveType.convex,
                     ),
 
                     ClayContainer(
+                      surfaceColor: Colors.orange.shade500,
                       color: white,
                       width: 100,
                       height: 100,
@@ -75,6 +81,7 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
+                    //left container
                     ClayContainer(
                       color: white,
                       width: 160,
@@ -84,6 +91,7 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
                       curveType: CurveType.convex,
                     ),
 
+                    //left inside container1
                     ClayContainer(
                       color: white,
                       width: 140,
@@ -93,16 +101,20 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
                       curveType: CurveType.convex,
                     ),
 
+                    //left inside container2
                     ClayContainer(
+                      surfaceColor: Colors.orange,
                       color: white,
                       width: 70,
                       height: 70,
                       borderRadius: 200,
                       depth: 70,
+                      curveType: CurveType.convex,
+                      spread: 23,
                     ),
                   ],
                 ),
-                left: -size.width * 0.03,
+                left: -size.width * 0.01,
                 bottom: size.height * 0.01,
               )
             ],
@@ -117,29 +129,32 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
                   alignment: Alignment.topRight,
                   children: [
                     ClayContainer(
-                      color: white,
+                      child: Lottie.asset('assets/14982-smart-home.json'),
+                      color: Colors.orange,
                       width: 180,
                       height: 180,
                       borderRadius: 200,
-                      depth: 90,
-                      curveType: CurveType.convex,
+                      depth: 80,
+                      curveType: CurveType.concave,
+
                     ),
                     ClayContainer(
                       color: white,
-                      width: 80,
-                      height: 80,
+                      width: 60,
+                      height: 60,
                       borderRadius: 200,
-                      depth: -80,
+                      depth: -50,
                       curveType: CurveType.convex,
                     ),
+
                   ],
                 ),
                 left: size.width * 0.50,
-                bottom: 3,
-              )
+                bottom: 1,
+              ),
             ],
           ),
-        )
+        ),
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:clay_containers/clay_containers.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:neumorphic/constants/constants.dart';
 
 class BottomContainer extends StatefulWidget {
@@ -33,15 +34,16 @@ class _BottomContainerState extends State<BottomContainer> {
               ),
               ClayContainer(
                 color: white,
+
                 depth: 50,
                 borderRadius: 30,
-                curveType: CurveType.convex,
+                curveType: CurveType.concave,
                 child: Padding(
                   padding: EdgeInsets.symmetric(
                       vertical: appPadding / 2, horizontal: appPadding * 2),
                   child: Text(
                     "LogIn",
-                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 17),
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17),
                   ),
                 ),
               ),
