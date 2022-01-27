@@ -39,7 +39,6 @@ class _BackgroundDesignState extends State<BackgroundDesign> {
 
                     //top right inside1 container
                     ClayContainer(
-
                       color: white,
                       width: 180,
                       height: 180,

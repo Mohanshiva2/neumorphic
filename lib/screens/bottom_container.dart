@@ -34,7 +34,6 @@ class _BottomContainerState extends State<BottomContainer> {
               ),
               ClayContainer(
                 color: white,
-
                 depth: 50,
                 borderRadius: 30,
                 curveType: CurveType.concave,
